@@ -24,7 +24,7 @@ ORDER BY UnitPrice;
 SELECT TOP 5
 c.CustomerID, c.CompanyName,
 ROUND(SUM(od.UnitPrice * od.Quantity * (1 - od.Discount)), 2) AS TotalPurchase
-INNER JOIN Orders o ON c.CUstomerID = o.CustomerID
+INNER JOIN Orders o ON c.CustomerID = o.CustomerID
 INNER JOIN [Order Details] od ON o.OrderID = od.OrderID
 WHERE YEAR(o.OrderDate) = 1997
 GROUP BY c.CustomerID, c.CompanyName
