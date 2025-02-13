@@ -29,3 +29,7 @@ INNER JOIN [Order Details] od ON o.OrderID = od.OrderID
 WHERE YEAR(o.OrderDate) = 1997
 GROUP BY c.CustomerID, c.CompanyName
 ORDER BY TotalPurchase DESC;
+
+-- Create a SQL Query to answer the following question
+SELECT TOP 10
+o.CustomerID,
