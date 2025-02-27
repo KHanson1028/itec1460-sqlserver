@@ -1,0 +1,2 @@
+The total amount for Order 10248 is $440.00
+Returned total amount: $440.00
