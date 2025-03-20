@@ -57,3 +57,5 @@ AS
 SELECT ProductID, NewStockLevel FROM Products;
 
 
+-- Complex Query --
+SELECT CustomerID FROM Orders;
