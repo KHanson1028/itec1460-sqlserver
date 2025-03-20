@@ -44,3 +44,16 @@ CREATE TABLE EmployeePerformance(
          SalesTarget DECIMAL(15,2) ,
          ActualSales DECIMAL(15,2)
 )
+
+-- Create a View --
+CREATE VIEW vw_ProductInventory
+ AS SELECT ProductName, UnitsInStock, UnitsOnOrder
+ FROM Products;
+
+
+-- Create a Stored Procedure --
+CREATE PROCEDURE sp_UpdateProdcutInventory
+AS 
+SELECT ProductID, NewStockLevel FROM Products;
+
+
